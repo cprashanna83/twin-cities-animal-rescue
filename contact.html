@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volunteer & Foster | Twin Cities Animal Rescue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <p class="brand">Twin Cities Animal Rescue</p>
+    <nav aria-label="Main navigation">
+      <ul><li><a href="index.html">Home</a></li><li><a href="services.html">How You Can Help</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Volunteer & Foster</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <h1>Volunteer or Foster Interest</h1>
+
+  <section class="two-column">
+    <div class="card">
+      <h2>Service Area</h2>
+      <p>We support animals and families throughout the Twin Cities community and surrounding areas.</p>
+    </div>
+    <div class="card">
+      <h2>Office Hours</h2>
+      <p>Monday–Friday: 9 a.m.–5 p.m.<br>Weekend responses may be limited.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interest Form</h2>
+    <form action="contact.html" method="get">
+      <fieldset>
+        <legend>Your Information</legend>
+        <p><label for="name">Full name (required)</label><br>
+        <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required></p>
+
+        <p><label for="email">Email address (required)</label><br>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Interest</legend>
+        <p><label for="interest">Interest type (required)</label><br>
+        <select id="interest" name="interest" required>
+          <option value="">Choose one</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="foster">Foster</option>
+          <option value="adoption">Adoption information</option>
+        </select></p>
+
+        <p><label for="availability">Availability (required)</label><br>
+        <input id="availability" name="availability" type="text" minlength="3" maxlength="100" required></p>
+
+        <p><label for="experience">Experience with pets</label><br>
+        <textarea id="experience" name="experience" rows="3" maxlength="800"></textarea></p>
+
+        <p><label for="message">Short message (required)</label><br>
+        <textarea id="message" name="message" rows="5" minlength="10" maxlength="1500" required></textarea></p>
+      </fieldset>
+
+      <button type="submit">Send Interest Form</button>
+    </form>
+  </section>
+</main>
+<footer class="site-footer"><p>Twin Cities Animal Rescue — Hope, care, and second chances.</p></footer>
+</body>
+</html>
